@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1.0"/>
+<style>
+.inline_element{
+	display: inline-block;
+	font-size:20px;
+}
+</style>
+<script src="split_merge_lines.js"></script>
+</head>
+<body onload="lines_animation.start()">
+<div id="my_div">
+	<button id="pause_resume" class="inline_element" onclick="pause_resume()">Pause</button>
+	<button id="change_speed" class="inline_element" onclick="change_speed()">Speed Up</button>
+	<button id="cross_mode" class="inline_element" onclick="cross_mode()">Cross Mode (Irreversible)</button>
+	<p class="inline_element" style="padding:2px;">#Branch: <span id="lines_n"></span></p>
+</div>
+</body>
+</html>
+<!-- why script cannot be <script ... /> -->
